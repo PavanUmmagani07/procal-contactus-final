@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Procal Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()" ><a href="#"><img src="images/Close_Menu.svg"/></a></li>
+            <li class="navbar-items"><a href="#">Company</a></li>
+            <li class="navbar-items"><a href="#">Products</a></li>
+            <li class="navbar-items"><a href="#">Solutions</a></li>
+            <li class="navbar-items"> <a href="#">Insights</a></li>
+            <li class="navbar-items"><a href="#">Contact Us</a></li>
+            <li><button class="nav-button-sidebar">Talk to a Specialist</button></li>
+
+        </ul>
+
+        <ul>
+            <li><a href="#"><img src="images/procal-logo.svg"/></a></li>
+            <li class="hideOnMobile navbar-items"><a href="#">Company</a></li>
+            <li class="hideOnMobile navbar-items"><a href="#">Products</a></li>
+            <li class="hideOnMobile navbar-items"><a href="#">Solutions</a></li>
+            <li class="hideOnMobile navbar-items"> <a href="#">Insights</a></li>
+            <li class="hideOnMobile navbar-items"><a href="#">Contact Us</a></li>
+            <li class="hideOnMobile"><button class="nav-button">Talk to a Specialist</button></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><img src="images/Menu.svg"/></a></li>
+        </ul>
+    </nav>
+
+    <!--Banner Section-->
+    <div class="banner-section">
+        <div class="banner-context">
+            <h1 class="banner-title">Contact us</h1>
+            <h2 class="banner-sub-title">Address</h2>
+            <p class="banner-para">92 East Main Street, Suite:405 Somerville,</br>
+                New Jersey 08876 United States.
+            </p>
+            <h2 class="banner-sub-title">Phone Number</h2>
+            <p class="banner-para">(732)-568-4786</p>
+        </div>
+    </div>
+
+    <!--form-section-->
+    <div class="form-section">
+        <div class="form-description">
+            <h3 class="form-title">We want to hear from you!</h3>
+            <p class="form-para">Fill out our form and a Procal expert will reach out to you</p>
+        </div>
+    
+        <form id="submitMyForm">
+            <div class="row-1">
+                <div class="left-input">
+                    <input type="text" placeholder="First Name" class="input-text" id="firstName"/>
+                    <p class="firstNameErrorMsg"></p>
+                </div>
+            
+                <div class="right-input">
+                    <input type="text" placeholder="Last Name" class="input-text" id="lastName"/>
+                    <p class="lastNameErrorMsg"></p>
+                </div>
+            </div>
+
+            <input type="email" placeholder="Email" class="input-text" id="email"/>
+            <p class="emailErrorMsg"></p>
+
+            <input type="tel" placeholder="Mobile Number" class="input-text" id="mobileNumber"/>
+            <p class="mobileNumberErrorMsg"></p>
+
+            <input type="text" placeholder="Your Inquriy or Comments" class="input-text" id="comments"/>
+            <p class="mobileNumberErrorMsg"></p>
+
+            <input type="checkbox"  class="checkbox" id="checkBox"/>
+            <label for="checkBox" class="checkbox-content"> I consent to PROCAL Systems, INC. processing my personal information as set out in the Privacy Policy and Cookie Policy and that, given the global nature of PROCAL’s business, such processing may take place outside of my home jurisdiction.*</label>
+
+            <div class="btn-container">
+                <button type="submit" class="submit-btn">SUBMIT MY FORM</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!--Location-section-->
+    <div class="location-container">
+        <div class="location-title">
+            <h3 class="location-head">Our Locations</h3>
+            <p class="location-description">Our diverse team brings a world of unique perspectives and niche capabilities to every project we undertake, serving clients worldwide with unparalleled dedication and excellence. Discover how our global presence enables us to deliver tailor-made solutions that transcend borders and exceed expectations.</p>
+        </div>
+
+        <div class="locations-section">
+            <div class="location">
+                <img src="./images/america.jpg" alt="North America" class="location-img">
+                <h4 class="location-name">North America</h4>
+            </div>
+
+            <div class="location">
+                <img src="./images/europe.jpg" alt="Europe" class="location-img">
+                <h4 class="location-name">Europe</h4>
+            </div>
+
+            <div class="location">
+                <img src="./images/asia.jpg" alt="Asia" class="location-img">
+                <h4 class="location-name">Asia</h4>
+            </div>
+
+            <div class="location">
+                <img src="./images/Middle-east.jpg" alt="Middle East" class="location-img">
+                <h4 class="location-name">Middle East</h4>
+            </div>
+        </div>
+
+        <hr/>
+        <!--North America-->
+        <div class="country-locations" id ="americaOffices">
+            <div class="Office-location">
+                <h4 class="location-name">New Jersey</h4>
+                <p class="office-address">92 East Main Street Suite:405</br>
+                    Somerville, New Jersey 08876</br>
+                    United States
+                </p>
+            </div>
+            
+            <div class="Office-location">
+                <h4 class="location-name">New Jersey</h4>
+                <p class="office-address">324 Courtyard Drive,</br>
+                    Hillsborough, NJ 08844
+                </p>
+            </div>
+            
+            <div class="Office-location">
+                <h4 class="location-name">Illionois</h4>
+                <p class="office-address">4255 Westbrook Dr Unit 222</br>
+                    Illinois 60504</br>
+                    United States
+                </p>
+            </div>
+            
+            <div class="Office-location">
+                <h4 class="location-name">Texas</h4>
+                <p class="office-address">3401 Cluster Rd Plano, Texas 75023</br>
+                    United States
+                </p>
+            </div>
+            
+        </div>
+            
+        <!--Europe-->
+        <div class="country-locations" hidden id="europeOffices">
+            <div class="Office-location">
+                <h4 class="location-name">Ireland</h4>
+                <p class="office-address">31 Glentain Manor Upper Carnamuggah,</br>
+                    County Donegal</br>
+                    Ireland
+                </p>
+            </div>
+            
+            <div class="Office-location">
+                <h4 class="location-name">Germany</h4>
+                <p class="office-address">Procaltech GmbH</br>
+                    c/o LETRIX Heubnerweg 7</br>
+                    14059 Berlin Germany
+                </p>
+            </div>
+            
+            <div class="Office-location">
+                <h4 class="location-name">Turkey</h4>
+                <p class="office-address">Hakki Yeten Cad Selenium Plaza No: 10/1</br>
+                    Kat5-6, Fulya, Istanbul 34349</br>
+                    Turkey
+                </p>
+            </div>
+            
+        </div>
+            
+        <!--Asia-->
+        <div class="country-locations" hidden id="asiaOffices">
+            <div class="Office-location">
+                <h4 class="location-name">Mohali</h4>
+                <p class="office-address">D 190 Industrial Area Sector 74, SAS Nagar</br>
+                    Punjab 160071</br>
+                    India
+                </p>
+                </div>
+            
+            <div class="Office-location">
+                <h4 class="location-name">Hyderabad</h4>
+                <p class="office-address">Shangrilla Plaza, Unit 407, Road No 2,
+                    </br> Banjarahills, Hyderabad, Telangana 500034
+                    </br> India
+                </p>
+            </div>
+        </div>
+            
+        <!--Middle East-->
+        <div class="country-locations"id="middleEastOffices"  hidden>
+            <div class="Office-location">
+                <h4 class="location-name">Dubai</h4>
+                <p class="office-address">Savvy One Businesses Center, 25th Floor, 
+                    </br>The Citadel Tower, Business Bay, Sheikh 
+                    </br>Zayed Road, Dubai, UAE
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-Section-->
+    <footer class="footer">
+        <div class="footer-container">
+            <!--Procal-Item-Container-->
+            <div class="item-container">
+                <img src="../images/procal-logo.svg">
+                <p class="footer-items">At Procal, our mission is to empower businesses with cutting-edge technology solutions and services that drive growth and innovation</p>
+                </br>
+                <p class="footer-items">Address</p>
+                <p class="footer-items">92 East Main Street, Suite:405 Somerville,</br>
+                    New Jersey 08876</br>
+                    United States.
+                </p>
+                </br>
+                <p class="footer-items">Phone Number</p>
+                <p class="footer-items">7325684786</p>
+                <p class="footer-items">9082554135</p>
+                </br>
+                <p class="footer-items">Contact mail</p>
+                <p class="footer-items"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">info@procaltech.com</a></p>
+            </div>
+
+            <!--Who are we Container-->
+            <div class="item-container">
+                <h5 class="title">Who are we</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="#">Our Mission</a></li>
+                    <li class="footer-items list-style"><a href="#">Our Vision</a></li>
+                    <li class="footer-items list-style"><a href="#">Our Commitments</a></li>
+                    <li class="footer-items list-style"><a href="#">Our Locations</a></li>
+                    <li class="footer-items list-style"><a href="#">Contact Us</a></li>
+                    <li class="footer-items list-style"><a href="#">Insights</a></li>
+                </ul>
+            </div>
+    
+            <!--What We do Container-->
+            <div class="item-container">
+                <h5 class="title">What we do</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="#">Our Clients</a></li>
+                    <li class="footer-items list-style"><a href="#">Our Industries</a></li>
+                    <li class="footer-items list-style"><a href="#">Our Methodoliges</a></li>
+                    <li class="footer-items list-style"><a href="#">Our Patrnerships</a></li>
+                </ul>
+            </div>
+    
+            <!--Products Container-->
+            <div class="item-container">
+                <h5 class="title">Who are we</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="#">Snap Automation</a></li>
+                    <li class="footer-items list-style"><a href="#">Artemis</a></li>
+                    <li class="footer-items list-style"><a href="#">Spot Finder</a></li>
+                </ul>
+            </div>
+    
+            <!--Solutions Container-->
+            <div class="item-container">
+                <h5 class="title">Solutions</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="#">Telecom Solutions</a></li>
+                    <li class="footer-items list-style"><a href="#">Emerging Technologies</a></li>
+                    <li class="footer-items list-style"><a href="#">Automation</a></li>
+                    <li class="footer-items list-style"><a href="#">Data Insights and Analytics</a></li>
+                    <li class="footer-items list-style"><a href="#">Financial Services</a></li>
+                </ul>
+            </div>
+    
+            <!--Cyber Security Container-->
+            <div class="item-container">
+                <h5 class="title">Cyber Security</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="#">Penetration Testing</a></li>
+                    <li class="footer-items list-style"><a href="#">Ransomeware health checks</a></li>
+                    <li class="footer-items list-style"><a href="#">Security frameworks and compliance</a></li>
+                    <li class="footer-items list-style"><a href="#">Managed Security Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="conctactUs.js" charset="UTF-8"></script>
+</body>
+</html>
