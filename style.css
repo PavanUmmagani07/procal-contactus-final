@@ -8,8 +8,6 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
 /*NAVBAR*/
 nav{
     background-color: #000;
@@ -49,7 +47,6 @@ nav li:first-child{
     border-color: #f08b07;
     margin: 8px 10px;
 }
-
 .navbar-items:hover{
     background-color: #b5af70;
 }
@@ -88,8 +85,8 @@ nav li:first-child{
     display: none;
 }
 
-
-/*Banner-Section*/
+@media (min-width:1051px){
+    /*Banner-Section*/
 .banner-section{
     background-image: url(images/globeimage.jpg);
     background-size: cover;
@@ -141,7 +138,6 @@ nav li:first-child{
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 25px;
-
 }    
 .left-input{
     float: left;
@@ -154,8 +150,6 @@ nav li:first-child{
 .float-clear{
     clear: both;
 }
-
-
 
 .input-text{
     height: 50px;
@@ -198,7 +192,6 @@ nav li:first-child{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 .location{
     margin-bottom: 24px;
@@ -247,8 +240,7 @@ li a{
     text-decoration: none;
     color: #7A7A7A;
 }
-
-
+}
 
 @media (max-width:1050px){
     .hideOnMobile{
@@ -433,6 +425,10 @@ li a{
         height: 35vh;
         color: #fff;
         padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .banner-title{
         font-weight: 600;
@@ -548,6 +544,10 @@ li a{
         padding: 30px 30px 30px 30px;
     }
     .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         
     }
